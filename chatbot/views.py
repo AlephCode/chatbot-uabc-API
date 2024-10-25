@@ -1,5 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.shortcuts import render
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -58,3 +59,7 @@ def openai_chat(request):
 
     except Exception as e:
         return Response({'error': str(e)}, status=500)
+
+
+def render_history_chat(request):
+    return render(request,'test_chat_history.html')
