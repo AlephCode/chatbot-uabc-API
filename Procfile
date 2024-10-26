@@ -1,1 +1,2 @@
-web: python manage.py collectstatic && gunicorn djangoProject.wsgi
+release: python manage.py migrate && python manage.py collectstatic --noinput
+web: gunicorn djangoProject.wsgi
