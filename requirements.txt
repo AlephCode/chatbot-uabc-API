@@ -35,6 +35,7 @@ nvidia-nvjitlink-cu12==12.6.68
 nvidia-nvtx-cu12==12.1.105
 openai==1.46.1
 packaging==24.1
+psycopg2==2.9.10
 psycopg2-binary==2.9.10
 pydantic==2.9.2
 pydantic_core==2.23.4
@@ -53,3 +54,4 @@ transformers==4.44.2
 triton==3.0.0
 typing_extensions==4.12.2
 urllib3==2.2.3
+whitenoise==6.7.0
